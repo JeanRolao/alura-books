@@ -68,8 +68,20 @@
         <section class="carrossel">
           <h2 class="carrossel__titulo">Novos lançamentos</h2>
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+          const swiper = new Swiper(".swiper", {
+          spaceBetween: 10,
+          slidesPerView: 3,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "bullets"
+         });
+        </script>
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        class="swiper-scrollbar"
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
@@ -79,25 +91,13 @@
             />
           </div>
           <div class="swiper-slide">
-            <img
-              src="img/Liderança.svg"
-              alt="Livro sobre liderança em design design da alura books"
-            />
+            <img src="img/Guia Front-end.svg" alt="Livro Guia front end" />
           </div>
           <div class="swiper-slide">
-            <img
-              src="img/Javascript.svg"
-              alt="Livro sobre javascript assertivo da alura books"
-            />
+            <img src="img/Portugol.svg" alt="Livro sobre portugol" />
           </div>
           <div class="swiper-slide">
-            <img src="Guia Front-end.svg" alt="Livro Guia front end" />
-          </div>
-          <div class="swiper-slide">
-            <img src="Portugol.svg" alt="Livro sobre portugol" />
-          </div>
-          <div class="swiper-slide">
-            <img src="Acessibilidade.svg" alt="livro sobre acessibilidade" />
+            <img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade" />
           </div>
         </div>
     </body>
